@@ -76,11 +76,11 @@ diagnosticMode:
   ## @param diagnosticMode.command Command to override all containers in the deployment
   ##
   command:
-  - sleep
+    - sleep
   ## @param diagnosticMode.args Args to override all containers in the deployment
   ##
   args:
-  - infinity
+    - infinity
 ## @section MySQL common parameters
 ##
 
@@ -97,7 +97,7 @@ diagnosticMode:
 image:
   registry: docker.io
   repository: bitnami/mysql
-  tag: 8.4.3-debian-12-r4
+  tag: 123
   digest: ""
   ## Specify a imagePullPolicy
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
@@ -546,7 +546,7 @@ primary:
     ## @param primary.persistence.accessModes MySQL primary persistent volume access Modes
     ##
     accessModes:
-    - ReadWriteOnce
+      - ReadWriteOnce
     ## @param primary.persistence.size MySQL primary persistent volume size
     ##
     size: 8Gi
@@ -982,7 +982,7 @@ secondary:
     ## @param secondary.persistence.accessModes MySQL secondary persistent volume access Modes
     ##
     accessModes:
-    - ReadWriteOnce
+      - ReadWriteOnce
     ## @param secondary.persistence.size MySQL secondary persistent volume size
     ##
     size: 8Gi
