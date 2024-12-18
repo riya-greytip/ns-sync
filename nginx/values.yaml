@@ -66,11 +66,11 @@ diagnosticMode:
   ## @param diagnosticMode.command Command to override all containers in the the deployment(s)/statefulset(s)
   ##
   command:
-    - sleep
+  - sleep
   ## @param diagnosticMode.args Args to override all containers in the the deployment(s)/statefulset(s)
   ##
   args:
-    - infinity
+  - infinity
 ## @section NGINX parameters
 
 ## Bitnami NGINX image version
@@ -86,7 +86,7 @@ diagnosticMode:
 image:
   registry: docker.io
   repository: bitnami/nginx
-  tag: 123
+  tag: 1.27.3-debian-12-r0
   digest: ""
   ## Specify a imagePullPolicy
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
