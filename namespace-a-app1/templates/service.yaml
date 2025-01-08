@@ -1,9 +1,9 @@
+# prettier-ignore
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "hello-world.fullname" . }}
-  labels:
-    {{- include "hello-world.labels" . | nindent 4 }}
+  name: namespace-a-app1
+  labels: {{ - include "hello-world.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -11,5 +11,4 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
-  selector:
-    {{- include "hello-world.selectorLabels" . | nindent 4 }}
+  selector: {{ - include "hello-world.selectorLabels" . | nindent 4 }}
