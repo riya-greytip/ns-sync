@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: namespace-b-app2
+  name: namespace-b-app3
   labels:
     {{- include "hello-world.labels" . | nindent 4 }}
 spec:

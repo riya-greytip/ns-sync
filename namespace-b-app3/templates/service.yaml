@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: namespace-b-app2
+  name: namespace-b-app3
   labels: {{- include "hello-world.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
