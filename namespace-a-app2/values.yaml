@@ -8,8 +8,8 @@ image:
   repository: nginx
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.2"
-
+  tag: "1.26"
+tag: "1.2888888"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -109,3 +109,14 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+service:
+  type: ClusterIP
+  port: 80
+livenessProbe:
+  httpGet:
+    path: /
+    port: http
+readinessProbe:
+  httpGet:
+    path: /
+    port: http
